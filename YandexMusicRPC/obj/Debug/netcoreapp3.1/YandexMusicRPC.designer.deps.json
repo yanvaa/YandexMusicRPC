@@ -1399,6 +1399,14 @@
           }
         }
       },
+      "TrayIcon/1.0.7.2": {
+        "runtime": {
+          "lib/netcoreapp3.0/TrayIcon.dll": {
+            "assemblyVersion": "1.0.7.2",
+            "fileVersion": "1.0.7.2"
+          }
+        }
+      },
       "YandexMusicApi.Client/1.0.2": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
@@ -2064,6 +2072,13 @@
       "sha512": "sha512-5zJ0XDxAIg8iy+t4aMnQAu0MqVbqyvfoUVl1yDV61xdo3Vth45oA2FoY4pPkxYAH5f8ixpmTqXeEIya95x0aCQ==",
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
+    },
+    "TrayIcon/1.0.7.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-N73HgWTTmXyPztVBzy74eY9m5DI/Crv/RZIuSRu8XH/tDFR6XRH1lkYvnmrjbHQljqHU8/rrfiPRifo8fO58YQ==",
+      "path": "trayicon/1.0.7.2",
+      "hashPath": "trayicon.1.0.7.2.nupkg.sha512"
     },
     "YandexMusicApi.Client/1.0.2": {
       "type": "package",

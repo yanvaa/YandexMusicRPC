@@ -10,6 +10,8 @@ namespace YandexMusicRPC
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+
+
     public partial class MainWindow : Window
     {
         DiscordRpcClient client = null;
@@ -87,6 +89,16 @@ namespace YandexMusicRPC
             string link = e.Uri.AbsoluteUri;
             Process.Start(new ProcessStartInfo("cmd", $"/c start " + link));
             e.Handled = true;
+        }
+
+        private void Minimaze_Click(object sender, RoutedEventArgs e)
+        {
+            Visibility = Visibility.Hidden;
+        }
+
+        private void TrayIcon_Click(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            Visibility = Visibility.Visible;
         }
     }
 }

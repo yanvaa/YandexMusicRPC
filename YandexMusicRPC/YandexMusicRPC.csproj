@@ -10,6 +10,7 @@
     <PackageReference Include="DiscordRichPresence" Version="1.0.175" />
     <PackageReference Include="DSharpPlus" Version="2.0.0-rc" />
     <PackageReference Include="Microsoft.Windows.SDK.Contracts" Version="10.0.25182-preview" />
+    <PackageReference Include="TrayIcon" Version="1.0.7.2" />
     <PackageReference Include="YandexMusicApi.Client" Version="1.0.2" />
   </ItemGroup>
 

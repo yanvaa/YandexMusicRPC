@@ -3,9 +3,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:icon="https://github.com/nullsoftware/TrayIcon"
         xmlns:local="clr-namespace:YandexMusicRPC"
         mc:Ignorable="d"
-        Title="YandexRPC" Height="153" Width="527" Loaded="Window_Loaded" Closing="Window_Closing" Background="#FF36393F" WindowStyle="SingleBorderWindow" ResizeMode="NoResize">
+        Title="YandexRPC" Height="184" Width="527" Loaded="Window_Loaded" Closing="Window_Closing" Background="#FF36393F" WindowStyle="SingleBorderWindow" ResizeMode="NoResize">
     <Grid Margin="0,0,0,-6">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="59*"/>
@@ -18,11 +19,17 @@
         </Border>
         <Button Name="StopRPC" Content="Stop" HorizontalAlignment="Left" Margin="165,52,0,0" VerticalAlignment="Top" Click="StopRPC_Click" RenderTransformOrigin="0.412,1.02" Grid.Column="1" Background="#FFD83C3E" Foreground="#FFF2FEFB"/>
         <Button Name="StartRPC" Content="Start" HorizontalAlignment="Left" Margin="118,52,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.412,1.02" Click="StartRPC_Click" IsEnabled="False" Grid.Column="1" Background="#FF2D7D46" Foreground="#FFF2FFF4" BorderBrush="#FF2D7D46"/>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="234,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top">
+        <Button Name="Minimaze" Content="Minimaze" HorizontalAlignment="Left" Margin="118,77,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.412,1.02" Grid.Column="1" Background="#FFDEDEDE" Foreground="Black" BorderBrush="#FF9C9C9C" Width="75" Click="Minimaze_Click"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="118,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="75" TextAlignment="Center">
             <Hyperlink NavigateUri="https://github.com/yanvaa/YandexMusicRPC" Foreground="White" FontSize="14" RequestNavigate="Hyperlink_RequestNavigate">
                 Github
             </Hyperlink>
         </TextBlock>
 
     </Grid>
+    <icon:TrayIconHandlers.TrayIcons>
+        <icon:TrayIcon Title="Yandex RPC"
+                   ClickCommand=""
+                   NotificationServiceMemberPath="NotificationService" Click="TrayIcon_Click"/>
+    </icon:TrayIconHandlers.TrayIcons>
 </Window>
